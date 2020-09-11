@@ -1,0 +1,40 @@
+// Question No.1
+// Create a webpage containing an image and three buttons
+// A. On click of the second button a chandge the existing image to a new image
+// B. On click of the third button change it once again
+// C. On click, the first image should come back
+
+
+<!DOCTYPE html>
+<html>
+<h1>Changing the Image</h1>
+    <img src="https://cdn.pixabay.com/photo/2018/11/17/22/15/tree-3822149_960_720.jpg" id="myImage" width="200" height="250">
+    <input type="button" onclick="changeImage()" value="Button 1" />
+	<input type="button" onclick="changeImage1()" value="Button 2" />
+	<input type="button" onclick="changeImage2()" value="Button 3" />
+    <p>Button 2 and Button 3 is to change image, and Button 1 is to come back first image<br />
+        into Softdrink bottle</p>
+
+    <script>
+        function changeImage() {
+            var image = document.getElementById('myImage');
+            
+                image.src = "https://cdn.pixabay.com/photo/2018/11/17/22/15/tree-3822149_960_720.jpg";
+           
+        }
+		
+		function changeImage1() {
+            var image = document.getElementById('myImage');
+            
+                image.src = "https://cdn.pixabay.com/photo/2017/01/14/12/59/iceland-1979445_960_720.jpg";
+           
+        }
+		
+		function changeImage2() {
+            var image = document.getElementById('myImage');
+            
+                image.src = "https://cdn.pixabay.com/photo/2013/06/29/21/18/wolf-142173_960_720.jpg";
+           
+        }
+    </script>
+</html>

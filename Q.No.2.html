@@ -1,0 +1,32 @@
+//Question No.2
+//Create a Webpage containin two input fields and a 
+    //A. Write something in the first input.
+    //B. On click of the button, the content of input one shoul be copied in the second input.
+
+<!DOCTYPE html>
+<html>
+<script>
+function FillBilling(f) {
+ 
+    f.billingname.value = f.shippingname.value;
+    
+}
+</script>
+<b>Write Something in the given box</b>
+<br><br>
+<form>
+First Input Field:
+<input type="text" name="shippingname">
+<br>
+
+<input type="button" name="billingtoo" value="Copy Text" onclick="FillBilling(this.form)">
+
+<P>
+<b>Copied text</b>
+<br><br>
+Second input field:
+<input type="text" name="billingname">
+<br>
+
+</form>
+</html>
